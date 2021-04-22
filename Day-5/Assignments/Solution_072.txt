@@ -1,5 +1,5 @@
 SELECT 
-c.custid AS "Customer Id" ,
-c.custname AS "Customer Name"
-FROM customer c,empdetails e
-WHERE c.CUSTNAME= e.EMPNAME AND c.EMAILID = e.EMAILID
+custid "Customer Id" ,
+custname "Customer Name"
+FROM customer c JOIN empdetails e ON c.custname=e.empname 
+AND c.EMAILID = e.EMAILID
